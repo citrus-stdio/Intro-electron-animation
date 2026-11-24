@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c2fngwo6pi574"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bjx6g"]
+shading_mode = 0
+albedo_color = Color(0.98039216, 0.5058824, 0.15686275, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ccrku"]
+material = SubResource("StandardMaterial3D_bjx6g")
+radius = 0.2
+height = 0.4
+
+[node name="electron" type="Node3D" unique_id=1181069268]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=773331827]
+mesh = SubResource("SphereMesh_ccrku")

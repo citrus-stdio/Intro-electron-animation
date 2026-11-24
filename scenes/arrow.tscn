@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://h7ti3ufw24sg"]
+
+[ext_resource type="ArrayMesh" uid="uid://d1hkgevsumxho" path="res://scenes/Untitled.obj" id="1_umosx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23jat"]
+shading_mode = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_23jat"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umosx"]
+shading_mode = 0
+
+[node name="arrow" type="Node3D" unique_id=537006703]
+
+[node name="cone" type="MeshInstance3D" parent="." unique_id=1192077032]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("1_umosx")
+surface_material_override/0 = SubResource("StandardMaterial3D_23jat")
+
+[node name="shaft" type="MeshInstance3D" parent="." unique_id=1459913292]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_23jat")
+surface_material_override/0 = SubResource("StandardMaterial3D_umosx")
